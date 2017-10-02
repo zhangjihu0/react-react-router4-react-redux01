@@ -1,0 +1,44 @@
+{
+  "name": "react-react-router4-react-redux01",
+  "version": "1.0.0",
+  "description": "- react react-router4 redux react-redux\r ## 初始 package.json\r ## webpack\r ```\r     $ yarn add webpack webpack-dev-server\r ```\r ```\r     $ yarn add babel-core babel-loader babel-preset-es2015 babel-preset-stage-0 babel-preset-react css-loader style-loader less less-loader html-webpack-plugin -D\r ```\r ## react \r ```\r     $ yarn add react redux react-redux react-router-dom\r ```\r ## fetch \r ```\r     $ yarn add es6-promise whatwg-fetch -D\r ```\r ## express\r ```\r     $ yarn add express\r ```\r ## scripts\r ```\r     \"start\",\"webpack-dev-server --port 5000 --open --progress --colors\",\r     \"build\",\"webpack -p\"\r ```",
+  "main": "index.js",
+  "scripts": {
+    "start":"webpack-dev-server --port 5000 --open --progress --colors",
+    "build":"webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangjihu0/react-react-router4-react-redux01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangjihu0/react-react-router4-react-redux01/issues"
+  },
+  "homepage": "https://github.com/zhangjihu0/react-react-router4-react-redux01#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "es6-promise": "^4.1.1",
+    "html-webpack-plugin": "^2.30.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "react": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2"
+  }
+}

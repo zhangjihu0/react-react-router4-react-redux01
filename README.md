@@ -3,26 +3,25 @@
 ## 初始 package.json
 ## webpack
 ```
-    $ npm install webpack webpack-dev-server
+    $ yarn add webpack webpack-dev-server -D
 ```
 ```
-    $ npm install babel-core babel-loader babel-preset-stage-0 babel-preset-react css-loader
-    style-loader less less-loader html-webpack-plugin -D
+    $ yarn add babel-core babel-loader babel-preset-es2015 babel-preset-stage-0 babel-preset-react css-loader style-loader less less-loader html-webpack-plugin -D
 ```
 ## react 
 ```
-    $ npm install react redux react-redux react-router-dom -S 
+    $ yarn add react redux react-redux react-router-dom
 ```
 ## fetch 
 ```
-    $ npm install es6-promise whatwg-fetch -D
+    $ yarn add es6-promise whatwg-fetch -D
 ```
 ## express
 ```
-    $ npm install express -S
+    $ yarn add express
 ```
 ## scripts
 ```
-    "start","webpack-dev-server --port 5000 --open --progress --colors",
-    "build","webpack -p"
+    "start":"webpack-dev-server --port 5000 --open --progress --colors",
+    "build":"webpack -p"
 ```
