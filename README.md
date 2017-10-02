@@ -11,18 +11,18 @@
 ```
 ## react 
 ```
-$ npm install react redux react-redux react-router-dom -S 
+    $ npm install react redux react-redux react-router-dom -S 
 ```
 ## fetch 
 ```
-$ npm install es6-promise whatwg-fetch -D
+    $ npm install es6-promise whatwg-fetch -D
 ```
 ## express
 ```
     $ npm install express -S
 ```
-##scripts
+## scripts
 ```
-"start","webpack-dev-server --port 5000 --open --progress --colors",
-"build","webpack -p"
+    "start","webpack-dev-server --port 5000 --open --progress --colors",
+    "build","webpack -p"
 ```
