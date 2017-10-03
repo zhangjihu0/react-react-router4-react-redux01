@@ -4,8 +4,8 @@
   "description": "- react react-router4 redux react-redux\r ## 初始 package.json\r ## webpack\r ```\r     $ yarn add webpack webpack-dev-server\r ```\r ```\r     $ yarn add babel-core babel-loader babel-preset-es2015 babel-preset-stage-0 babel-preset-react css-loader style-loader less less-loader html-webpack-plugin -D\r ```\r ## react \r ```\r     $ yarn add react redux react-redux react-router-dom\r ```\r ## fetch \r ```\r     $ yarn add es6-promise whatwg-fetch -D\r ```\r ## express\r ```\r     $ yarn add express\r ```\r ## scripts\r ```\r     \"start\",\"webpack-dev-server --port 5000 --open --progress --colors\",\r     \"build\",\"webpack -p\"\r ```",
   "main": "index.js",
   "scripts": {
-    "start":"webpack-dev-server --port 3002 --open --progress --colors",
-    "build":"webpack -p"
+    "start": "webpack-dev-server --port 3002 --open --progress --colors",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
   "dependencies": {
     "express": "^4.16.1",
     "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2"
