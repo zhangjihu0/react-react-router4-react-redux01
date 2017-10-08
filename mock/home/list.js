@@ -1,0 +1,32 @@
+module.exports={
+    "hasMore":true,
+    "data":[
+        {
+            "img":"http://img06.tooopen.com/images/20160921/tooopen_sy_179583447187.jpg",
+            "title":"汉堡大王",
+            "subTitle":"叫我汉堡大大，还给你多彩口味",
+            "price":"28",
+            "distance":"120m",
+            "number":"389",
+            "id":"1111121"
+        },
+        {
+            "img":"http://img05.tooopen.com/images/20160121/tooopen_sy_155168162826.jpg",
+            "title":"汉堡大王w",
+            "subTitle":"叫我汉堡大大，还给你多彩口味,叫我汉堡大大，还给你多彩口味",
+            "price":"28",
+            "distance":"120m",
+            "number":"389",
+            "id":"1111122"
+        },
+        {
+            "img":"http://img02.tooopen.com/images/20160509/tooopen_sy_161967094653.jpg",
+            "title":"汉堡大王e",
+            "subTitle":"叫我汉堡大大，还给你多彩口味",
+            "price":"28",
+            "distance":"120m",
+            "number":"389",
+            "id":"1111123"
+        }
+    ]
+}

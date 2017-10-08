@@ -20,6 +20,10 @@
 ```
     $ yarn add express
 ```
+## swipe插件
+```
+yarn add swipe-js-iso react-swipe
+```
 ## scripts
 ```
     "start":"webpack-dev-server --port 5000 --open --progress --colors",
@@ -37,3 +41,7 @@
         - index.jsx 根据路由依据不同的路由组件实现不同路由的显示；
     - index.html 
     - index.js containers 下的index.jsx App组件（包含各种路由的总页面）；
+    - store onlyOne
+    - actions 用户发布动作
+    - reducers 定义规则的
+    - action-type action的名字
