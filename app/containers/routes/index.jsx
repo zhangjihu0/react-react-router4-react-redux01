@@ -14,7 +14,7 @@ export default class RouteMap extends Component{
             <div>
                 <Router>
                     <Switch>
-                        {/* 只有当前路径为/的时候才匹配路由 */}
+                        {/* 只有当前路径为/的时候才匹配路由switch 只匹配一个child 路由exact 绝对匹配 */}
                         <Route exact path='/' component={Home} />
                         <Route path='/detail/:id' component={Detail} />
                     </Switch>

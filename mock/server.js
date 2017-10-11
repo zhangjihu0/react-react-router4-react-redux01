@@ -16,6 +16,18 @@ app.get('/api/list/:city/:page',(req,res)=>{
     console.log(req.params.page);
     res.send(list)
 });
+let info = require('./detail/info');
+//通过id 来获取商户信息；
+app.get('/api/detail/info:id',(req,res)=>{
+    res.send(info);
+})
+// 评价列表 id 页码 page
+let comment = require('./detail/comment');
+app.get('/api/detail/comment/:id/:page',(req,res)=>{
+    console.log(req.params.city);
+    console.log(req.params.page);
+    res.send(comment);
+})
 //fetch 获取数据
 //res,json() 数据传输为字符串，由.json()转化为json()格式；
 // fetch(url,{

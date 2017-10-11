@@ -5,10 +5,13 @@ render(){
     return( 
             <div className="back header-component">
                 <span>
-                    <i className="iconfont icon-fanhui"></i>
+                    <i onClick={this.back.bind(this)} className="iconfont icon-fanhui"></i>
                     {this.props.title}
                 </span>
             </div>
         )
+    }
+    back(){
+        this.props.history.go(-1);
     }
 }
