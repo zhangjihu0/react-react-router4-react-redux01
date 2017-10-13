@@ -1,17 +1,26 @@
-module.exports=[{
-    title:'暑假5折',
-    img:'https://gss0.bdstatic.com/5bVWsj_p_tVS5dKfpU_Y_D3/res/r/image/2017-09-26/352f1d243122cf52462a2e6cdcb5ed6d.png',
-    link:'www.buidu.com'
-},{
-    title:'特价出国2',
-    img:'https://gss0.bdstatic.com/5bVWsj_p_tVS5dKfpU_Y_D3/res/r/image/2017-09-26/352f1d243122cf52462a2e6cdcb5ed6d.png',
-    link:'www.buidu.com'
-},{
-    title:'特价出国3',
-    img:'https://gss0.bdstatic.com/5bVWsj_p_tVS5dKfpU_Y_D3/res/r/image/2017-09-26/352f1d243122cf52462a2e6cdcb5ed6d.png',
-    link:'www.buidu.com'
-},{
-    title:'特价出国2',
-    img:'https://gss0.bdstatic.com/5bVWsj_p_tVS5dKfpU_Y_D3/res/r/image/2017-09-26/352f1d243122cf52462a2e6cdcb5ed6d.png',
-    link:'www.buidu.com'
-}]
+module.exports={
+    "hasMore":true,
+    "data":[
+       {
+           userName:'17600189589',
+           star:5,
+           comment:'美好的一天结束了'
+       },
+        {
+           userName:'17600189589',
+           star:5,
+           comment:'美好的一天结束了'
+       },
+        {
+           userName:'17600189589',
+           star:5,
+           comment:'美好的一天结束了'
+       },
+        {
+           userName:'17600189589',
+           star:5,
+           comment:'美好的一天结束了'
+       }
+
+    ]
+}

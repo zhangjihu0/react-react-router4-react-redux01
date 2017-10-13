@@ -18,7 +18,7 @@ app.get('/api/list/:city/:page',(req,res)=>{
 });
 let info = require('./detail/info');
 //通过id 来获取商户信息；
-app.get('/api/detail/info:id',(req,res)=>{
+app.get('/api/detail/info/:id',(req,res)=>{
     res.send(info);
 })
 // 评价列表 id 页码 page

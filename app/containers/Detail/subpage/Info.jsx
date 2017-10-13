@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import {getInfo} from '../../../fetch/detail/index.jsx';
+import InfoComponent from "../../../components/InfoComponent/index.jsx";
 export default class Info extends Component{
     constructor(){
         super();
@@ -15,7 +16,8 @@ export default class Info extends Component{
             </div>
         )
     }
-    ComponentDidMount(){
+    componentDidMount(){
+
         getInfo(this.props.id).then(res=>res.json()).then(data=>{
            this.setState({data})
         });
