@@ -8,7 +8,7 @@ export default class Comment extends Component{
         this.state={
             data:[],
             isloading:true,
-            hasMore:false,
+            hasMore:true,
             page:0
         }
     }
@@ -27,7 +27,7 @@ export default class Comment extends Component{
     }
     componentDidMount(){
           getComment(this.props.id,this.state.page).then(res=>res.json()).then(data=>{
-            this.setState({data:data.data})
+            this.setState({data:data.data,isloading:false})
           })     
     }
     loadMore(){

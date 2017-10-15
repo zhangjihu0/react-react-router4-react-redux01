@@ -31,7 +31,7 @@ export default class List extends Component{
     }
     //在当前写一个加载更多的函数，传递给loadMore，当点击按钮，触发传递函数 
     loadMore(){
-        console.log("loading。。。。")
+        console.log("loading。。。。");
         this.setState({
             page:this.state.page+1,
             isloading:true//每次加载更多时状态为正在加载;

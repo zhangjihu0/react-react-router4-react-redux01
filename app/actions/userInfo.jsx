@@ -5,6 +5,5 @@ export function update(data){//update修改的动作
     return {
         type:Type.UPDATE_CITY,
         data
-
     }
 }
