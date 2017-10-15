@@ -22,7 +22,7 @@
 ```
 ## swipe插件
 ```
-yarn add swipe-js-iso react-swipe
+    yarn add swipe-js-iso react-swipe
 ```
 ## scripts
 ```
@@ -45,3 +45,7 @@ yarn add swipe-js-iso react-swipe
     - actions 用户发布动作
     - reducers 定义规则的
     - action-type action的名字
+    ## bindActionsCreator 使用
+    ```
+        http://www.cnblogs.com/cloud-/p/7267454.html
+    ```
