@@ -17,38 +17,38 @@ class Login extends Component{
                 {/* 如果登录过显示登录组件，否则不显示直接跳转用户页面 */}
                 <HeaderComponent title="登录" history={this.props.history} />
                 {
-                    !this.state.login?<LoginComponent login = {this.login.bind(this)} />:<div>login</div>
+                    this.state.login?<LoginComponent login = {this.login.bind(this)} />:<div>login</div>
                 }
             </div>
         )
     }
     //在这里我们需要写一个方法；这个方法是登陆的，将用户名存到redux中；
     login(userName){
-        console.log(this.props.userInfo);
         let info = this.props.userInfo;
         info.username = userName;
         //更新redux中的state
         this.props.userActions.update(info);
         //登录成功后跳转到用户页面
         if(this.props.match.params.route){
-            console.log(this.props.match.params.route);
-            this.props.history.push(this.props.match.params.route)
+            console.log('match',this.props.match.params.route)
+            //提交到login的路径肯定是encode转化后的跳转是需要解码的
+            this.props.history.push(decodeURIComponent(this.props.match.params.route))
         }else{
             //如果没指定跳回那个页面 默认回到用户页面
-            this.props.history.push('/user')
+            this.props.history.push('/user');
         }
        
     }
-    componentDidMout(){
+    componentDidMount(){
         this.checkLogin();
     }
     checkLogin(){//检查是否登录，在redux中 state.userInfo中，是否有username，如果有则登录过
         if(this.props.userInfo.username){
-            this.props.history.push('/user');
+           console.log('sds',this.props)
+           return this.props.history.push('/user');
         }
         this.setState({
             login:true,//显示登录组件
-
         })
     }
 }

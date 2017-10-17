@@ -10,6 +10,7 @@ import Home from '../Home/index.jsx';
 import Detail from '../Detail/index.jsx';
 import Login from '../Login/index.jsx';
 import User from '../User/index.jsx';
+import City from  '../City/index.jsx'
 export default class RouteMap extends Component{
     render(){
         return(
@@ -23,6 +24,7 @@ export default class RouteMap extends Component{
                         {/*如果登录过在登录跳转到用户页面  */}
                         <Route path="/login/:route?" component={Login} />
                         <Route path="/user" component={User} />
+                        <Route path="/city" component={City} />
                     </Switch>
                 </Router>
             </div>

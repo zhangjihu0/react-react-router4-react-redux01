@@ -12,6 +12,12 @@ render(){
         )
     }
     back(){
-        this.props.history.go(-1);
+        if(this.props.back){
+            // 手动调转到指定的路径；
+            this.props.history.push(this.props.back)
+        }else{
+            this.props.history.go(-1);
+        }
+       
     }
 }
