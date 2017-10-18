@@ -11,7 +11,6 @@ class City extends Component{
             <div>
                 {/*头  */}
                 <HeaderComponent title="选择城市" history={this.props.history} />
-
                 {/*当前城市  */}
                 <CurrentCity cityName={this.props.userInfo.cityName} />
                 {/*选择城市  */}
@@ -21,10 +20,11 @@ class City extends Component{
         )
     }
     changeCity(city){
+        console.log(city)
         //city 代表当前选择城市组件选择后的结果；
         let oldInfo = this.props.userInfo;//取出原有的数据
         oldInfo.cityName = city;//更改成最新城市，将最新数据派发成动作；
-        this.props.useActions.update(oldInfo);
+        this.props.userActions.update(oldInfo);
     }
 }
 export default connect(
