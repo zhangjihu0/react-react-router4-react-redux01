@@ -25,6 +25,8 @@ class City extends Component{
         let oldInfo = this.props.userInfo;//取出原有的数据
         oldInfo.cityName = city;//更改成最新城市，将最新数据派发成动作；
         this.props.userActions.update(oldInfo);
+        // 修改成功后跳转到首页
+        this.props.history.push('/');
     }
 }
 export default connect(

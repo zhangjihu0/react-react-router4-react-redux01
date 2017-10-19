@@ -17,12 +17,7 @@ export default class InfoComponent extends Component{
                     </div>
                 </div>
                 {/* 将内容转换成HTML插入到页面中 */}
-                <div dangerouslySetInnerHTML={{__html:desc}}>
-                </div>
-                <div className="handle">
-                    <button>收藏</button>
-                    <button>购买</button>
-                </div>
+                <div dangerouslySetInnerHTML={{__html:desc}}></div>
             </div>
         )
     }
