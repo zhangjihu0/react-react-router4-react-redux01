@@ -33,6 +33,9 @@ class Detail extends Component{
             let id = this.props.match.params.id;
             // 2.去收藏的数据中查询。
             // 数组的some 如果数组中返回则返回true 否则返回false 
+            //some 一个为真就返回真，没有返回假，
+            // every 每个为真才为真，有false，就返回false
+            // filter 返回满足条件的真实值；
             console.log(this.props.store);
             console.log(this.props.store);
             let flag = this.props.store.some(item=>item===id);  
