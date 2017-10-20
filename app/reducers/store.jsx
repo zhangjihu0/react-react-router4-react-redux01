@@ -1,4 +1,4 @@
-import * as types from '../action-type/store';
+import * as Types from '../action-types/store.jsx';
 
 let initState = [];
 export default function store(state=initState,action){

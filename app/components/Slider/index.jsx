@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import ReactSwipe from 'react-swipe';//轮播图插件
-import "./index.less"
+import "./index.less";
+import {Link} from 'react-router-dom';
 export default class Slider extends Component{
     constructor(){
         super()

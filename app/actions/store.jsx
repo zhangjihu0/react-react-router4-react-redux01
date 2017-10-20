@@ -1,4 +1,4 @@
-import * as Types from '../action-types/store';
+import * as Types from '../action-types/store.jsx';
 export function add(id){
     return{
         type:Types.ADD_STORE,

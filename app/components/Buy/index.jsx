@@ -4,9 +4,16 @@ export default class Buy extends Component{
     render(){
         return(
             <div className="Buy">
-                <button>收藏</button>
-                <button>购买</button>
+                <button onClick={this.store.bind(this)}>{this.props.isStore?"已收藏":"收藏"}</button>
+                <button onClick={this.buy.bind(this)}>购买</button>
             </div>
         )
+    }
+    buy(){
+        console.log("buy");
+        this.props.buy();
+    }
+    store(){
+        this.props.store();
     }
 }
